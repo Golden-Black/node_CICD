@@ -4,11 +4,14 @@
   "description": "Experimenting with Github workflow",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Ziyan Liu",
   "license": "ISC",
   "dependencies": {
     "lint": "^1.1.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
   }
 }
