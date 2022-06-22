@@ -4,7 +4,8 @@
   "description": "Experimenting with Github workflow",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "index.js"
   },
   "author": "Ziyan Liu",
   "license": "ISC",
