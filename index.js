@@ -6,4 +6,5 @@ function sub(a, b, c){
     return a - b - c;
 }
 
-module.exports = add;
+module.exports = {sum: sum, 
+                  multiply: multiply}
