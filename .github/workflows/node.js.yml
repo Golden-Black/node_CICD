@@ -20,14 +20,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    # Run Linter for the Code base #
-    - name: Super-Linter
-      uses: github/super-linter@v4.9.4
-      env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: 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
-    
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -37,3 +29,12 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+
+# Run Linter for the Code base #
+    - name: Super-Linter
+      uses: github/super-linter@v4.9.4
+      env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: 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
+          FILTER_REGEX_EXCLUDE: packages-lock.json
