@@ -2,4 +2,11 @@ function add(x, y){
     return x + y;
 }
 
-module.exports = add;
+function multiply(j, k){
+    return j * k;
+}
+
+module.exports = {
+    add: add,
+    multiply: multiply
+};
